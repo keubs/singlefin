@@ -69,7 +69,7 @@ Author URI: http://www.chromplexdesigns.com
     }
 
     p + p {
-        margin-top: 18px;
+        // margin-top: 18px;
     }
     
 
@@ -195,7 +195,7 @@ Author URI: http://www.chromplexdesigns.com
         box-sizing: border-box;
         margin: auto;
         overflow: hidden;
-        width: 940px;
+        max-width: 940px;
     }
 
 
@@ -209,8 +209,12 @@ Author URI: http://www.chromplexdesigns.com
 
 	
 	.header {
-		background-color: #D68533;
+		// background-color: #D68533;
 	}
+
+    body.single .header {
+        background-color: #353535;
+    }
 	
 	.header .header-image {
 		opacity: 1;
@@ -226,7 +230,7 @@ Author URI: http://www.chromplexdesigns.com
 	
 
         .header-top {
-            background-color: #D68533;
+            // background-color: #D68533;
             font-size: 0;
             padding: 15px 0;
             box-sizing: border-box;
@@ -242,20 +246,31 @@ Author URI: http://www.chromplexdesigns.com
 		}
 
             .header-top-logo {
-                background-image: url('img/logo-01.svg');
-                background-size: 200px 40px;
+                display: inline-block;
+                background-image: url('img/footer-waves-02.svg');
                 background-position: center center;
                 background-repeat: no-repeat;
-                display: inline-block;
+                background-size: 48px auto;
+                width: 55px;
                 height: 40px;
-                width: 200px;
+                // background-image: url('img/logo-01.svg');
+                // background-size: 200px 40px;
+                // background-position: center center;
+                // background-repeat: no-repeat;
+                // display: inline-block;
+                // height: 40px;
+                // width: 200px;
                 vertical-align: middle;
-                -webkit-transition: opacity .25s ease-in-out;
-                  -moz-transition: opacity .25s ease-in-out;
-                  -o-transition: opacity .25s ease-in-out;
-                  transition: opacity .25s ease-in-out;
+                // -webkit-transition: opacity .25s ease-in-out;
+                //   -moz-transition: opacity .25s ease-in-out;
+                //   -o-transition: opacity .25s ease-in-out;
+                //   transition: opacity .25s ease-in-out;
                   position: absolute;
-                  background-color:#D68533;
+                  border-bottom :solid 2px #D68533;
+            }
+
+            body.single .header-top-logo {
+                background-image: url('img/waves-white.png');
             }
 
             .header-top-logo.top {
@@ -271,7 +286,7 @@ Author URI: http://www.chromplexdesigns.com
             }
 
             .header-top-logo:hover {
-                opacity: 0;
+                // opacity: 0;
 
             }
 	
@@ -283,18 +298,28 @@ Author URI: http://www.chromplexdesigns.com
 				text-align: right;
 				// width: calc(100% - 200px);
                 width: 100%;
-                line-height: 40px;
+                line-height: 72px;
 
             }
+
+                body.single .header .header-top-menu a {
+                    color: #FFF;
+                }
 
                 .header-top-menu a {
                     color: #353535;
                     margin-left: 30px;
                 }
+
+                .header-top-menu a:before {
+                    content: "+";
+                    padding-right: 4px;
+                    color: #D68533;
+                }
                 
 
                 .header-top-menu-link:hover {
-                    color: white;
+                    color: #D68533;
                 }
 
 
@@ -394,7 +419,16 @@ Author URI: http://www.chromplexdesigns.com
             }
             
             
-            
+            .header-text {
+                font-size: 28px;
+                // text-align: center;
+                margin: 58px auto;
+                max-width: 640px;
+                color: #353535;
+                font-family: 'Archer';
+                font-weight: bold;
+                font-style: normal;
+            }
 /**********
 *
 *   project overlay
@@ -550,6 +584,41 @@ Author URI: http://www.chromplexdesigns.com
 *   Content
 *
 **********/
+    *, *:after, *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 5px;
+        // padding: 15px;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    .grid:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+
+    .grid-pad > [class*='col-']:last-of-type {
+      padding-right: 20px;
+    }
 
     .work {
         position: relative;
@@ -564,7 +633,8 @@ Author URI: http://www.chromplexdesigns.com
 	    	width: 100%;
 	    	text-align: center;
 	    	box-sizing: border-box;
-	    	padding: 0;
+	    	// padding: 0;
+            max-width: 940px;
     	}
 
         .work-desktop {
@@ -572,9 +642,11 @@ Author URI: http://www.chromplexdesigns.com
             position: relative;
             background-repeat: no-repeat;
             background-position: center center; 
-			background-size: 100% auto;
+			// background-size: 100% auto;
+            background-size: cover;
 			-webkit-transition: all 1s ease-in-out;
-			box-shadow: 0 0 0 7px #fff inset;
+			// box-shadow: 0 0 0 7px #fff inset;
+            float: left;
 
         }
         
@@ -583,8 +655,13 @@ Author URI: http://www.chromplexdesigns.com
 	        // transform: scale(.98);
         }
 
+            .work-desktop-inner {
+                height: 100%;
+            }
             .work-desktop-hover {
-                background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+                // background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+                border-bottom: solid 4px #cc6c28;
+                background-color: #eaeaea;
                 box-sizing: border-box;
                 color: white;
                 display: table;
@@ -594,7 +671,8 @@ Author URI: http://www.chromplexdesigns.com
                 padding: 40px;
                 position: absolute;
                 text-align: center;
-				box-shadow: 0 0 0 7px #fff inset;
+                text-indent: -9999px;
+				// box-shadow: 0 0 0 7px #fff inset;
                 transition: opacity 0.5s ease;
                 width: 100%;
                
@@ -615,28 +693,45 @@ Author URI: http://www.chromplexdesigns.com
             	}
 
                 .work-desktop-hover-text {
-                    display: table-cell;
+                    display: block;
                     vertical-align: middle;
+                    text-indent: -9999px;
+                    width: 100%;
+                    height: 100%;
                 }
 
                 .work-desktop-hover-button {
+                    cursor: pointer;
+                    /* border: 1px solid #fff; */
+                    /* padding: 10px; */
+                    // text-transform: none;
+                    // position: absolute;
+                    // left: 0;
+                    // top: 0;
+                    // width: 100%;
+                    // line-height: 300px;
                     /* border: 1px solid #fff; */
                     /* padding: 10px; */
                     text-transform: none;
-                    position: absolute;
-                    left: 0;
-                    top: 0;
+                    /* position: absolute; */
+                    /* left: 0; */
+                    /* top: 0; */
                     width: 100%;
-                    line-height: 300px;
+                    /* line-height: 460px; */
+                    display: block;
+                    height: 100%;
                 }
 
                 .work-desktop-hover-button:hover {
                     // border: 1px solid #D68533;
+                    border-bottom: solid 4px #ffa500;
+                    background: url('img/link-bg.png') no-repeat center center;
+                    transition: .2s ease-in-out;
                     color: #FFF;
                 }
 
         .work-desktop:hover .work-desktop-hover {
-            opacity: 1.0;
+            opacity: 1;
         }
 
         .work-mobile {
@@ -649,22 +744,46 @@ Author URI: http://www.chromplexdesigns.com
             }
 
     .about {
-        background-color: #353535;
-        color: white;
+        // background-color: #353535;
+        // color: white;
+        color: #353535;
         padding: 60px 0;
+        max-width: 690px;
+        margin: 0 auto;
     }
 
+        .about h2, .contact h2 {
+            text-transform: none;
+            border: 0;
+        }
+        .about h2:after, .contact h2:after {
+            content: '\2014';
+            padding-left: 20px;
+            color: #cc6c28;
+        }
+
         .about-who {
-            font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
+            // font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
+            font-family: 'Archer';
             font-size: 14px;
             font-weight: 500;
             line-height: 18px;
             padding-left: 45px;
             margin-bottom: 60px;
+
+            -moz-column-gap: 50px;
         }
 
+            .about-who p {
+                float: left;
+                width: 42%;
+                margin-right: 8%;
+            }
+
         .about-do {
-            font-size: 13px;
+            font-family: 'Archer';
+            font-weight: 500;
+            font-size: 14px;
             line-height: 28px;
             padding-left: 45px;
         }
@@ -681,8 +800,10 @@ Author URI: http://www.chromplexdesigns.com
             	}
 
     .contact {
-        background-color: #D68533;
-        color: white;
+        // background-color: #D68533;
+        background-color: #eaeaea;
+        // color: white
+        color: #353535;
         font-size: 11px;
         line-height: 15px;
         overflow: hidden;
@@ -690,8 +811,9 @@ Author URI: http://www.chromplexdesigns.com
     }
     
     .contact-container {
-		padding-left: 45px;    
-		padding-right: 45px;
+		// padding-left: 45px;    
+		// padding-right: 45px;
+        margin: 0 auto;
     }
 
         .contact-left {
@@ -707,6 +829,21 @@ Author URI: http://www.chromplexdesigns.com
                 font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
                 font-size: 14px;
                 font-weight: 500;
+            }
+
+            .contact-left-content li {
+                list-style: none;
+                margin-bottom: 20px;
+                padding-left: 40px;
+            }
+
+            .contact-left-content li a {
+                color: #353535;
+            }
+
+            .contact-left-content li a:before {
+                content: "+";
+                padding-left: 2px;
             }
 
         .contact-right {
@@ -726,6 +863,7 @@ Author URI: http://www.chromplexdesigns.com
                 font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
                 font-size: 14px;
                 font-weight: 500;
+
             }
 
 /**********
@@ -743,26 +881,30 @@ Author URI: http://www.chromplexdesigns.com
 	}
 
     .item h1 {
-        border-bottom: 1px solid rgba(0,0,0,.2);
-        font-size: 18px;
-        text-transform: uppercase;
+        // border-bottom: 1px solid rgba(0,0,0,.2);
+        font-size: 16px;
+        // text-transform: uppercase;
         padding-bottom: 10px;
-        margin-bottom: 40px;
-        max-width:
+        margin-bottom: 20px;
     }
 
     .item h2 {
         border-top: 1px solid rgba(0,0,0,.2);
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 700;
         margin: 20px 0 0 0;
         padding: 20px 0 20px 0;
-        text-indent: 25px;
+        // text-indent: 25px;
+        text-transform: capitalize;
+        font-family: 'Archer';
     }
 
     .item-introduction {
         overflow: hidden;
         margin-bottom: 40px;
+        max-width: 690px;
+        margin: 0 auto;
+        font-family: 'Archer';
     }
     
     .item-introduction:before, .item-introduction:after {
@@ -776,12 +918,13 @@ Author URI: http://www.chromplexdesigns.com
 
 
         .item-introduction-description {
-            float: left;
-            font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
+            float: right;
+            // font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
+            font-family: 'Archer';
             font-size: 14px;
-		  font-weight: 500;
-		  line-height: 18px;
-            width: 50%;
+	        font-weight: 500;
+		    line-height: 18px;
+            // width: 50%;
         }
         
          
@@ -790,19 +933,33 @@ Author URI: http://www.chromplexdesigns.com
         }
 
         .item-introduction-contents {
-            float: right;
+            float: left;
             font-size: 12px;
-            list-style-type: decimal-leading-zero;
+            // list-style-type: decimal-leading-zero;
+            color: #cfcfcf;
             max-width: 150px;
+            padding-left: 13px;
+
         }
 
+
             .item-introduction-contents-link {
-                color: #353535;
+                color: #cfcfcf;
+                margin-bottom: 20px;
+                display: block;
+                font-size: 14px;
             }
 
-            .item-introduction-contents-link:hover {
-                color: #D68533;
+            .item-introduction-contents li:hover {
+                color: #353535;
+                margin-left: 30px;                
             }
+
+
+
+            // .item-introduction-contents-link:hover {
+            //     color: #D68533;
+            // }
 
         .item-navigation {
             background-color: #353535;

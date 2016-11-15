@@ -19,8 +19,8 @@
 
 	<div class="header main-header">
         <div class="header-top">
-            <div class="container" style="height: 40px; position: relative">
-                <a href="<?php echo SITE_URL; ?>" class="header-top-logo top"></a>
+            <div class="container" style="height: 45px; position: relative">
+                <!-- <a href="<?php echo SITE_URL; ?>" class="header-top-logo top"></a> -->
                 <a href="<?php echo SITE_URL; ?>" class="header-top-logo"></a>
                 <div class="header-top-menu home">
                     <a class="header-top-menu-link" href="#work">Work</a>
@@ -37,9 +37,9 @@
 
 
         <?php if (is_front_page()) { ?>
-        <div class="header-image">
+        <!-- <div class="header-image">
 
-            <!-- <div class="header-image-fish"></div> -->
+
 
             <div class="header-image-text">
                 <h1>Welcome to <br/>Single Fin Studio.</h1>
@@ -50,7 +50,7 @@
             <div class="header-image-down-container">
                 <a href="#work" class="header-image-down bounce"><img src="<?php echo THEME_DIR . '/img/arrow.svg'; ?>"/></a>
             </div>
-        </div>
+        </div> -->
         <?php } ?>
 
     </div>

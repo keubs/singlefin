@@ -12,6 +12,9 @@ function enqueue_styles() {
 	wp_register_style( 'style', THEME_DIR . '/style.css', array(), '1', 'all' );
 	wp_enqueue_style( 'style' );
 
+    wp_register_style( 'style', THEME_DIR . '/fonts/archer/stylesheet.css', array(), '1', 'all' );
+    wp_enqueue_style( 'archer_style' );
+
 }
 	add_action( 'wp_enqueue_scripts', 'enqueue_styles' );
 

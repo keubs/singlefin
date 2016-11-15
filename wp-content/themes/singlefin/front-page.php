@@ -5,8 +5,12 @@
 	<div id="single-post-container"></div>
 	
     <div class="work" id="work">
-
-        <div class="container" id="isotope">
+        <div class="header-text">
+            <p>
+                Born on the always sunny coast of San Francisco, <br />Single Fin studio is the design work of Ben Bloom. <br/> Drawing lines since nineteen ninety-one.
+            </p>
+        </div>
+        <div class="container grid grid-pad" id="isotope">
 
             <?php
                 $args = array(
@@ -26,10 +30,10 @@
                     $grid = get_field('grid_width', $id);
                     ?>
 
-                    <div class="work-desktop isotope-item" style="width: <?php echo $grid; ?>%; height: 300px; background-image: url('<?php echo $thumb_desktop['url']; ?>'); ">
-                        <div class="work-desktop-hover">
+                    <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 460px;">
+                        <div class="work-desktop-inner" style="background-image: url('<?php echo $thumb_desktop['url']; ?>'); ">
                             <div class="work-desktop-hover-text">
-                                <h3><a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a></h3>
+                                <a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a>
                             </div>
                         </div>
                     </div>
@@ -53,29 +57,37 @@
             $what_we_do = get_field('what_we_do');
         ?>
 
-        <div class="container">
-            <h2>Who we are</h2>
+        <div class="container grid grid-pad">
+
+            <div class="col-2">
+                <h2 class="gotham-bold">Roots</h2>
+            </div>
+            <div class="col-10" style="margin-bottom: 40px;">
                 <div class="about-who">
                     <?php echo $who_we_are; ?>
                 </div>
-
-            <h2 class="with-top-margin">What we do</h2>
+            </div>
+            <div class="col-2">
+                <h2 class="with-top-margin gotham-bold">Skills</h2>
+            </div>
+            <div class="col-10">
                 <div class="about-do">
                     <?php echo $what_we_do; ?>
                 </div>
+            </div>
         </div>
 
     </div>
 
 <script>
-    jQuery(document).ready(function() {
+    // jQuery(document).ready(function() {
 
-        if (jQuery(window).width() > 940) {
-           jQuery('#isotope').isotope({
-                layoutMode : 'fitRows'
-            });             
-        }
-    })
+    //     if (jQuery(window).width() > 940) {
+    //        jQuery('#isotope').isotope({
+    //             layoutMode : 'fitRows'
+    //         });             
+    //     }
+    // })
 </script>
 
 <?php get_footer();

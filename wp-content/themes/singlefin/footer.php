@@ -6,11 +6,11 @@
         $right_column = get_field('right_column', 'options');
         ?>
 
-        <div class="container">
-            <h2>Contact</h2>
+        <div class="container grid grid-pad" style="width: 700px;">
+            <!-- <h2>Contact</h2> -->
 
 			<div class="contact-container">
-	            <div class="contact-left">
+	        <!--     <div class="contact-left">
 	                <div class="contact-left-header"><h3><?php echo $left_column_header; ?></h3></div>
 	                <div class="contact-left-content"><?php echo $left_column; ?></div>
 	            </div>
@@ -18,20 +18,28 @@
 	            <div class="contact-right">
 	                <div class="contact-right-header"><h3><?php echo $right_column_header; ?></h3></div>
 	                <div class="contact-right-content"><?php echo $right_column; ?></div>
+	            </div> -->
+	            <div class="col-2">
+	                <h2 class="gotham-bold">Contact</h2>
+	            </div>
+	            <div class="col-5">
+	                <div class="contact-left-content"><?php echo $left_column; ?></div>	
+	            </div>
+	            <div class="col-5">
+	                <div class="contact-right-content"><?php echo $right_column; ?></div>
 	            </div>
             </div>
-
         </div>
 
     </div>
 
-    <div class="footer">
+<!--     <div class="footer">
         <div class="container">
             <div class="footer-slogan"><p>Drawing lines since 1991</p></div>
 
             <div class="footer-waves"></div>
         </div>
-    </div>
+    </div> -->
 
     <script>
 	    
