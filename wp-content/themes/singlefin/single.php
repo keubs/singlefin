@@ -11,15 +11,15 @@
         <div class="col-6">
             <?php the_title('<h1>', '</h1>'); ?>
             <?php if($galleries) { ?>
-                <ol class="item-introduction-contents">
-                    <?php foreach ($galleries as $gallery) {
+                <ul class="item-introduction-contents">
+                    <?php $i = 1; foreach ($galleries as $gallery) {
                         $category = $gallery['title'];
                         $images = $gallery['images'];
                         $category_selector = str_replace(' ', '_', strtolower($category));
                         $category_display = str_replace('_', ' ', ucfirst($category)); ?>
-                        <li><a class="item-introduction-contents-link" href="#<?php echo $category_selector; ?>"><?php echo $category_display; ?></a></li>
-                    <?php } ?>
-                </ol>
+                        <li><a class="item-introduction-contents-link" href="#<?php echo $category_selector; ?>"><?php echo $i . '. '; echo $category_display; ?></a></li>
+                    <?php $i++; } ?>
+                </ul>
             <?php } ?>
         </div>
         <div class="col-6">

@@ -62,7 +62,7 @@
             <div class="col-2">
                 <h2 class="gotham-bold">Roots</h2>
             </div>
-            <div class="col-10" style="margin-bottom: 40px;">
+            <div class="col-10">
                 <div class="about-who">
                     <?php echo $who_we_are; ?>
                 </div>

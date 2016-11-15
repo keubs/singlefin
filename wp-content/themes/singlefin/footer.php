@@ -1,5 +1,5 @@
     <div class="contact" id="contact">
-		<div class="item-navigation-top"><a href="#top">Back to top</a></div>
+		
         <?php
         $left_column_header = get_field('left_column_header', 'options');
         $left_column = get_field('left_column', 'options');
@@ -31,6 +31,7 @@
 	            </div>
             </div>
         </div>
+        <div class="item-navigation-top"><a href="#top">Back to top</a></div>
     </div>
 
 <!--     <div class="footer">
