@@ -61,7 +61,6 @@
     <div class="container">
         <div class="item-navigation-next"><?php if ($previous) { echo $previous; } else { echo " &nbsp; "; } ?></div>
         <div class="item-navigation-previous"><?php if ($next) { echo $next; } else { echo " &nbsp; "; } ?></div>
-        <div class="item-navigation-top"><a href="#top">Back to top</a></div>
     </div>
 </div>
 

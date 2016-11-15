@@ -1,4 +1,5 @@
     <div class="contact" id="contact">
+		<div class="item-navigation-top"><a href="#top">Back to top</a></div>
         <?php
         $left_column_header = get_field('left_column_header', 'options');
         $left_column = get_field('left_column', 'options');
@@ -6,7 +7,7 @@
         $right_column = get_field('right_column', 'options');
         ?>
 
-        <div class="container grid grid-pad" style="width: 700px;">
+        <div class="container grid grid-pad" style="width: 680px;">
             <!-- <h2>Contact</h2> -->
 
 			<div class="contact-container">
@@ -19,10 +20,10 @@
 	                <div class="contact-right-header"><h3><?php echo $right_column_header; ?></h3></div>
 	                <div class="contact-right-content"><?php echo $right_column; ?></div>
 	            </div> -->
-	            <div class="col-2">
+	            <div class="col-3">
 	                <h2 class="gotham-bold">Contact</h2>
 	            </div>
-	            <div class="col-5">
+	            <div class="col-4">
 	                <div class="contact-left-content"><?php echo $left_column; ?></div>	
 	            </div>
 	            <div class="col-5">
@@ -30,7 +31,6 @@
 	            </div>
             </div>
         </div>
-
     </div>
 
 <!--     <div class="footer">

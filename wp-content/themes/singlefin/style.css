@@ -195,7 +195,7 @@ Author URI: http://www.chromplexdesigns.com
         box-sizing: border-box;
         margin: auto;
         overflow: hidden;
-        max-width: 940px;
+        max-width: 910px;
     }
 
 
@@ -826,9 +826,9 @@ Author URI: http://www.chromplexdesigns.com
             }
 
             .contact-left-content {
-                font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
+                font-family: 'Archer';
                 font-size: 14px;
-                font-weight: 500;
+                font-weight: 700;
             }
 
             .contact-left-content li {
@@ -860,9 +860,10 @@ Author URI: http://www.chromplexdesigns.com
             }
 
             .contact-right-content {
-                font-family: 'Archer SSm A', 'Archer SSm B', sans-serif;
+                font-family: 'Archer', sans-serif;
                 font-size: 14px;
                 font-weight: 500;
+                font-style: italic;
 
             }
 
@@ -962,7 +963,7 @@ Author URI: http://www.chromplexdesigns.com
             // }
 
         .item-navigation {
-            background-color: #353535;
+            // background-color: #353535;
             font-size: 11px;
             overflow: hidden;
             text-align: center;
@@ -978,7 +979,7 @@ Author URI: http://www.chromplexdesigns.com
 
             .item-navigation a {
                 display: block;
-                padding: 25px 15px;
+                // padding: 25px 15px;
                 text-align: center;
                 width: 100px;
             }
@@ -993,13 +994,56 @@ Author URI: http://www.chromplexdesigns.com
                     padding-left: 0;
                 }
 
-                .item-navigation-top {
-                    display: inline-block;
+                .item-navigation-previous a {
+                    width: 13px;
+                    height: 24px;
+                    text-indent: -9999px;
+                    background: url('img/arrow-prev.jpg') no-repeat left;
                 }
+
+                .item-navigation-top {
+                    display: block;
+                    width: 910px;
+                    margin: 0 auto;
+                    display: block;
+                    position: relative;
+                }
+
+                    .item-navigation-top a {
+                        width: 25px;
+                        height: 25px;
+                        background: url('img/top.jpg') no-repeat;
+                        position: absolute;
+                        text-indent: -9999px;
+                        right: 0;
+                    }
 
                 .item-navigation-next {
                     float: right;
                     padding-right: 0;
+                }
+
+                .item-navigation-next a {
+                    width: 13px;
+                    height: 24px;
+                    text-indent: -9999px;
+                    background: url('img/arrow-next.jpg') no-repeat right;
+                }
+
+                .item-navigation-next a:hover {
+                    width: 76px;
+                    cursor: pointer;
+                    background-position-x: 0px;
+                }
+                .item-navigation-previous a:hover {
+                    width: 76px;
+                    cursor: pointer;
+                    background-position-x: -13px;
+                }
+
+                .item-navigation-next a,
+                .item-navigation-previous a {
+                    margin-bottom: 80px;
                 }
 
 /**********
