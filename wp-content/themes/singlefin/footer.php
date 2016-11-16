@@ -7,7 +7,7 @@
         $right_column = get_field('right_column', 'options');
         ?>
 
-        <div class="container grid grid-pad" style="width: 680px;">
+        <div class="container grid grid-pad">
             <!-- <h2>Contact</h2> -->
 
 			<div class="contact-container">
