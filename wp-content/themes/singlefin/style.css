@@ -924,7 +924,7 @@ Author URI: http://www.chromplexdesigns.com
     }
 
     .item h2 {
-        border-top: 1px solid rgba(0,0,0,.2);
+        border-top: 1px solid #eaeaea;
         font-size: 14px;
         font-weight: 700;
         margin: 20px 0 0 0;
