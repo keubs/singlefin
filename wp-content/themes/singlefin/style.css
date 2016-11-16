@@ -1145,7 +1145,7 @@ Author URI: http://www.chromplexdesigns.com
         display: block;
         right: auto;
         top: auto;
-        margin: 30px auto;
+        margin: 60px auto 10px;
     }
     html body#top .container {
         box-sizing: border-box;
