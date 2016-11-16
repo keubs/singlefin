@@ -8,8 +8,14 @@
 <div class="item container project">
 
     <div class="item-introduction">
-        <div class="col-6">
-            <?php the_title('<h1>', '</h1>'); ?>
+        <?php the_title('<h1>', '</h1>'); ?>
+        <div class="col-6 description">
+            <div class="item-introduction-description">
+                <?php echo $description; ?>
+            </div>
+        </div>
+
+        <div class="col-6 contents">
             <?php if($galleries) { ?>
                 <ul class="item-introduction-contents">
                     <?php $i = 1; foreach ($galleries as $gallery) {
@@ -21,11 +27,6 @@
                     <?php $i++; } ?>
                 </ul>
             <?php } ?>
-        </div>
-        <div class="col-6">
-            <div class="item-introduction-description">
-                <?php echo $description; ?>
-            </div>
         </div>
 
     </div>
