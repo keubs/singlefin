@@ -195,8 +195,8 @@ Author URI: http://www.chromplexdesigns.com
         box-sizing: border-box;
         margin: auto;
         overflow: hidden;
-        max-width: 1200px;
-        padding: 0 25px;
+        max-width: 1350px;
+        padding: 0 75px;
     }
 
 
@@ -651,7 +651,7 @@ Author URI: http://www.chromplexdesigns.com
 	    	text-align: center;
 	    	box-sizing: border-box;
 	    	// padding: 0;
-            max-width: 1200px;
+            max-width: 1350px;
     	}
 
         .work-desktop:nth-child(even) {
@@ -894,7 +894,7 @@ Author URI: http://www.chromplexdesigns.com
     .contact .container {
         position: relative;
         overflow: visible;
-        max-width: 1200px;
+        max-width: 1350px;
     }
     .contact-container {
 		// padding-left: 45px;    
@@ -1098,7 +1098,7 @@ Author URI: http://www.chromplexdesigns.com
                     display: block;
                     position: absolute;
                     top: 0;
-                    right: -145px;
+                    right: 75px;
                     width: 25px;
                     height: 25px;
                 }
