@@ -38,11 +38,7 @@
                         </div>
                     </div>
 
-                    <div class="work-mobile">
-                        <a href="<?php echo $link; ?>">
-                            <img src="<?php echo $thumb_mobile['url']; ?>" />
-                        </a>
-                    </div>
+           
                 <?php }
             ?>
 

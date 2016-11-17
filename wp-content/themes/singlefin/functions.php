@@ -28,6 +28,9 @@ function enqueue_scripts() {
     wp_register_script('packery', THEME_DIR . '/js/packery-mode.pkgd.js', ['jquery', 'isotope'], '1', false);
     wp_enqueue_script( 'packery' );
 
+    wp_register_script('viz', THEME_DIR . '/js/jquery.visible.min.js', ['jquery'], '1', false);
+    wp_enqueue_script( 'viz' );
+
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_scripts' );
 

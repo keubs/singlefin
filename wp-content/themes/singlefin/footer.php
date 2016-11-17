@@ -30,8 +30,8 @@
 	                <div class="contact-right-content"><?php echo $right_column; ?></div>
 	            </div>
             </div>
+        	<div class="item-navigation-top"><a href="#top"></a></div>
         </div>
-        <div class="item-navigation-top"><a href="#top">Back to top</a></div>
     </div>
 
 <!--     <div class="footer">
@@ -140,8 +140,38 @@
                 jQuery('.header-mobile').slideToggle();
             });
             
-            
-            
+            // Nav bar functionality
+            lastpos = jQuery(window).scrollTop();
+            lastcount = 0 - lastpos;
+            jQuery(window).scroll(function() {
+                curpos = jQuery(window).scrollTop();
+                lastcount += lastpos - curpos;
+                lastpos = curpos
+            });
+            setInterval(function() {
+                if (lastcount > 50 || lastpos <= 50) {
+                    jQuery('body').removeClass('shortie');
+                    lastcount = 0
+                }
+                ;if (lastcount < -20) {
+                    jQuery('body').addClass('shortie');
+                    lastcount = 0
+                }
+            }, 50)
+
+            // scroll visible
+            var $h1 = jQuery('.work-desktop');
+            var testVis = function () {
+                $h1.each(function () {
+                    if (jQuery(this).visible()) {
+                        jQuery(this).addClass('animated');
+                    } else {
+                        // jQuery(this).removeClass('animated');
+                    }
+                });
+            };
+            jQuery(window).on('scroll resize', testVis);
+            testVis();
         });
     </script>
 
