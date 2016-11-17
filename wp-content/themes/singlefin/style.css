@@ -196,6 +196,7 @@ Author URI: http://www.chromplexdesigns.com
         margin: auto;
         overflow: hidden;
         max-width: 1200px;
+        padding: 0 25px;
     }
 
 
@@ -688,6 +689,7 @@ Author URI: http://www.chromplexdesigns.com
             .work-desktop-inner {
                 height: 100%;
                 background-size: cover;
+                background-position: center;
                 transition: .5s;
             }
 

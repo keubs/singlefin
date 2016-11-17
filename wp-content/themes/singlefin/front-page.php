@@ -30,7 +30,7 @@
                     $grid = get_field('grid_width', $id);
                     ?>
 
-                    <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 460px;">
+                    <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 560px;">
                         <div class="work-desktop-inner" style="background-image: url('<?php echo $thumb_desktop['url']; ?>'); ">
                             <div class="work-desktop-hover-text">
                                 <a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a>
@@ -38,7 +38,11 @@
                         </div>
                     </div>
 
-           
+                    <div class="work-mobile">
+                        <a href="<?php echo $link; ?>">
+                            <img src="<?php echo $thumb_mobile['url']; ?>" />
+                        </a>
+                    </div>
                 <?php }
             ?>
 
