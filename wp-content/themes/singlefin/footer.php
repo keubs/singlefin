@@ -173,6 +173,11 @@
             	};
             	jQuery(window).on('scroll resize', testVis);
             	testVis();
+
+            	jQuery('.work-desktop').height(jQuery('.work-desktop').width());
+            	jQuery(window).on('resize', function(){
+            		jQuery('.work-desktop').height(jQuery('.work-desktop').width());
+            	});
             });
         });
     </script>
