@@ -968,9 +968,14 @@ Author URI: http://www.chromplexdesigns.com
 	}
 
 	.project img {
-		margin-bottom: 16px;
+		margin-bottom: 90px;
         width: 100%;
+        transition: all .6667s;
 	}
+
+    .project img.animated {
+        margin-bottom: 16px;
+    }
 
     .item h1 {
         // border-bottom: 1px solid rgba(0,0,0,.2);
