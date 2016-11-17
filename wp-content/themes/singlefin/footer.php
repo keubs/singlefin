@@ -160,18 +160,20 @@
             }, 50)
 
             // scroll visible
-            var $h1 = jQuery('.work-desktop');
-            var testVis = function () {
-                $h1.each(function () {
-                    if (jQuery(this).visible()) {
-                        jQuery(this).addClass('animated');
-                    } else {
-                        // jQuery(this).removeClass('animated');
-                    }
-                });
-            };
-            jQuery(window).on('scroll resize', testVis);
-            testVis();
+            $(window).load(function(){
+            	var $h1 = jQuery('.work-desktop');
+            	var testVis = function () {
+            	    $h1.each(function () {
+            	        if (jQuery(this).visible()) {
+            	            jQuery(this).addClass('animated');
+            	        } else {
+            	            // jQuery(this).removeClass('animated');
+            	        }
+            	    });
+            	};
+            	jQuery(window).on('scroll resize', testVis);
+            	testVis();
+            });
         });
     </script>
 
