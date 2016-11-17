@@ -670,7 +670,7 @@ Author URI: http://www.chromplexdesigns.com
             background-position: center center; 
 			// background-size: 100% auto;
             background-size: cover;
-			transition: all 1.2s ease-in-out;
+			transition: all .66667s ease-in-out;
 			// box-shadow: 0 0 0 7px #fff inset;
             // float: left;
             margin-bottom: 50px;
