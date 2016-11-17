@@ -161,7 +161,7 @@
 
             // scroll visible
             jQuery(window).load(function(){
-            	var $h1 = jQuery('.work-desktop');
+            	var $h1 = jQuery('.work-desktop, .project img');
             	var testVis = function () {
             	    $h1.each(function () {
             	        if (jQuery(this).visible()) {
