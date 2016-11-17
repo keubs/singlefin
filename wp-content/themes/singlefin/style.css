@@ -810,7 +810,7 @@ Author URI: http://www.chromplexdesigns.com
         // color: white;
         color: #353535;
         padding: 60px 0;
-        max-width: 690px;
+        max-width: 1140px;
         margin: 0 auto;
     }
 
@@ -894,7 +894,7 @@ Author URI: http://www.chromplexdesigns.com
     .contact .container {
         position: relative;
         overflow: visible;
-        max-width: 1340px;
+        max-width: 1140px;
     }
     .contact-container {
 		// padding-left: 45px;    
@@ -1000,7 +1000,7 @@ Author URI: http://www.chromplexdesigns.com
         overflow: hidden;
         margin-bottom: 40px;
         padding-bottom: 40px;
-        max-width: 690px;
+        max-width: 1370px;
         margin: 0 auto;
         font-family: 'Archer', sans-serif;
     }
