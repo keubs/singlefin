@@ -7,7 +7,7 @@
     <div class="work" id="work">
         <div class="header-text">
             <p>
-                Born on the always sunny coast of San Francisco, <br />Single Fin studio is the design work of Ben Bloom. <br/> Drawing lines since nineteen ninety-one.
+                Born on the always sunny coast of San Francisco, Single Fin studio is the design work of Ben Bloom. Drawing lines since nineteen ninety-one.
             </p>
         </div>
         <div class="container grid grid-pad" id="isotope">
@@ -30,7 +30,7 @@
                     $grid = get_field('grid_width', $id);
                     ?>
 
-                    <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 560px;">
+                    <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 590px;">
                         <div class="work-desktop-inner" style="background-image: url('<?php echo $thumb_desktop['url']; ?>'); ">
                             <div class="work-desktop-hover-text">
                                 <a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a>
