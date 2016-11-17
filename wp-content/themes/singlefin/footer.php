@@ -160,7 +160,7 @@
             }, 50)
 
             // scroll visible
-            $(window).load(function(){
+            jQuery(window).load(function(){
             	var $h1 = jQuery('.work-desktop');
             	var testVis = function () {
             	    $h1.each(function () {
