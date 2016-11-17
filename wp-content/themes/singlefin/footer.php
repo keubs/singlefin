@@ -20,10 +20,10 @@
 	                <div class="contact-right-header"><h3><?php echo $right_column_header; ?></h3></div>
 	                <div class="contact-right-content"><?php echo $right_column; ?></div>
 	            </div> -->
-	            <div class="col-3">
+	            <div class="col-2">
 	                <h2 class="gotham-bold">Contact</h2>
 	            </div>
-	            <div class="col-4">
+	            <div class="col-5">
 	                <div class="contact-left-content"><?php echo $left_column; ?></div>	
 	            </div>
 	            <div class="col-5">
