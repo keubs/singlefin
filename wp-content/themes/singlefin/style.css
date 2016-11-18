@@ -1283,7 +1283,7 @@ Author URI: http://www.chromplexdesigns.com
    
 
     .header-top-logo, .header-top-logo:hover {
-        background-image: url('img/footer-waves-02.svg');
+        background-image: url('img/waves-white.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 48px auto;
@@ -1292,7 +1292,7 @@ Author URI: http://www.chromplexdesigns.com
     }
     
     .header-top-logo.top {
-        background-image: url('img/footer-waves-02.svg');
+        background-image: url('img/waves-white.svg');
     }
 
 	.header-top-menu {
@@ -1334,17 +1334,17 @@ Author URI: http://www.chromplexdesigns.com
     .header-image-text { top: calc(50% - 91px); }
     .item-navigation {margin:0 30px;}
     .item-navigation-previous a, .item-navigation-next a {
-        width: 76px;
+        // width: 76px;
     }
 
     .item-navigation-previous a {
-        background-position-x: -13px;
+        // background-position-x: -13px;
     }
 
     .item-navigation-next a {
-        background-position-x: 0px;
+        // background-position-x: 0px;
     }
-    .item-navigation a {  padding: 25px 0; }
+    // .item-navigation a {  padding: 25px 0; }
 
     .header-top-menu {
 	    font-size: 14px;
