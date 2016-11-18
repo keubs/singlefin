@@ -9,13 +9,13 @@
 
     <div class="item-introduction">
         <?php the_title('<h1>', '</h1>'); ?>
-        <div class="col-9 description">
+        <div class="col-8 description">
             <div class="item-introduction-description">
                 <?php echo $description; ?>
             </div>
         </div>
 
-        <div class="col-3 contents">
+        <div class="col-4 contents">
             <?php if($galleries) { ?>
                 <ul class="item-introduction-contents">
                     <?php $i = 1; foreach ($galleries as $gallery) {

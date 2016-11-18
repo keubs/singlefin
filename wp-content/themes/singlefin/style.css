@@ -1000,8 +1000,8 @@ Author URI: http://www.chromplexdesigns.com
     .item-introduction {
         overflow: hidden;
         margin-bottom: 40px;
-        max-width: 1150px;
-        margin: 0 auto;
+        max-width: 850px;
+        margin: 0;
         font-family: 'Archer', sans-serif;
         padding: 0 75px 40px;
     }
