@@ -499,7 +499,7 @@ Author URI: http:
 		margin: 0;
 		padding: 0;
 		-webkit-transition: all 600ms ease-in-out;
-        -moz-:transition: all 600ms ease-in-out;
+        -moz-transition: all 600ms ease-in-out;
 		transition: all 600ms ease-in-out;
 	}
 
@@ -828,7 +828,7 @@ Author URI: http:
 
         .work-mobile {
             display: none;
-            width: 100% !importantl
+            width: 100% !important;
         }
 
             .work-mobile img {
