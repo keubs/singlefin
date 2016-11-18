@@ -150,8 +150,11 @@
             });
             setInterval(function() {
                 if (lastcount > 50 || lastpos <= 50) {
-                    jQuery('body').removeClass('shortie');
+                    // jQuery('body').removeClass('shortie');
                     lastcount = 0
+                }
+                if (jQuery(window).scrollTop() < 76) {
+                	jQuery('body').removeClass('shortie');
                 }
                 ;if (lastcount < -20) {
                     jQuery('body').addClass('shortie');
