@@ -216,6 +216,21 @@ Author URI: http://www.chromplexdesigns.com
     body.single .header {
         background-color: #353535;
     }
+
+    .header.main-header.scroll {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        background: #FFF;
+        transition: height .3s;
+    }
+
+    body.shortie .header.main-header.scroll {
+        height: 75px;
+    }
 	
 	.header .header-image {
 		opacity: 1;
