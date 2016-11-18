@@ -22,6 +22,36 @@ Author URI: http:
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Archer';
+    src: url('fonts/archer/Archer.eot');
+    src: url('fonts/archer/Archer.eot?#iefix') format('embedded-opentype'),
+        url('fonts/archer/Archer.woff') format('woff'),
+        url('fonts/archer/Archer.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Archer';
+    src: url('fonts/archer/Archer-Bold.eot');
+    src: url('fonts/archer/Archer-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/archer/Archer-Bold.woff') format('woff'),
+        url('fonts/archer/Archer-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archer';
+    src: url('fonts/archer/Archer-Medium.eot');
+    src: url('fonts/archer/Archer-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/archer/Archer-Medium.woff') format('woff'),
+        url('fonts/archer/Archer-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 /**********
 *
@@ -944,7 +974,7 @@ Author URI: http:
             .contact-left-content {
                 font-family: 'Archer', sans-serif;
                 font-size: 14px;
-                font-weight: 800;
+                font-weight: bolder;
             }
 
             .contact-left-content li {
