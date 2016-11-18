@@ -213,7 +213,7 @@ Author URI: http://www.chromplexdesigns.com
 		// background-color: #D68533;
 	}
 
-    body.single .header {
+    body.single .header, body.shortie .header.main-header.scroll {
         background-color: #353535;
     }
 
@@ -284,20 +284,12 @@ Author URI: http://www.chromplexdesigns.com
                   position: absolute;
             }
 
-            body.single .header-top-logo {
+            body.single .header-top-logo, body.shortie .header.main-header.scroll .header-top-logo {
                 background-image: url('img/waves-black.svg');
             }
 
             .header-top-logo.top {
                 background-image: url('img/logo-02.svg');
-            }
-            .header-top-logo:hover {
-                // background-image: url('img/logo-02.svg');
-
-                // background-image: url('img/logo-hover.svg');
-                // background-size: 200px 40px;
-                // background-position: center center;
-                // background-repeat: no-repeat;
             }
 
             .header-top-logo:hover {
@@ -317,7 +309,7 @@ Author URI: http://www.chromplexdesigns.com
 
             }
 
-                body.single .header .header-top-menu a {
+                body.single .header .header-top-menu a, body.shortie .header.main-header.scroll .header-top-menu a{
                     color: #FFF;
                 }
 
