@@ -28,7 +28,7 @@
                     $thumb_mobile = get_field('mobile', $id);
                     $thumb_desktop = get_field('desktop', $id);
                     $grid = get_field('grid_width', $id);
-                    $path = parse_url($thumb_deaktop['url'])['path'];
+                    $path = parse_url($thumb_desktop['url'])['path'];
                     $path = str_replace('.', '@2x.', $path);
                     ?>
 
