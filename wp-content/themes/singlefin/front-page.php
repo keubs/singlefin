@@ -28,10 +28,12 @@
                     $thumb_mobile = get_field('mobile', $id);
                     $thumb_desktop = get_field('desktop', $id);
                     $grid = get_field('grid_width', $id);
+                    $path = parse_url($thumb_deaktop['url'])['path'];
+                    $path = str_replace('.', '@2x.', $path);
                     ?>
 
                     <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 590px;">
-                        <div class="work-desktop-inner" style="background-image: url('<?php echo $thumb_desktop['url']; ?>'); ">
+                        <div class="work-desktop-inner" style="background: -webkit-image-set(url('<?php echo $thumb_desktop['url']; ?>') 1x, url('<?php echo $path; ?>') 2x); ">
                             <div class="work-desktop-hover-text">
                                 <a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a>
                             </div>
