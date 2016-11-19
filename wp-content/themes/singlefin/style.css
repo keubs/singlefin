@@ -265,6 +265,7 @@ Author URI: http:
     body.shortie .header.main-header.scroll {
         height: 75px;
     }
+
 	
 	.header .header-image {
 		opacity: 1;
@@ -303,23 +304,36 @@ Author URI: http:
                 background-size: 48px auto;
                 width: 55px;
                 height: 40px;
-                
-                
-                
-                
-                
-                
-                
                 vertical-align: middle;
-                
-                
-                
-                
-                  position: absolute;
+                position: absolute;
+            }
+
+            .header-top-logo:before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color: #cc6d28;
+                visibility: hidden;
+                -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+                -webkit-transition: all 0.2s ease-in-out 0s;
+                transition: all 0.2s ease-in-out 0s;
+                transform-origin: left;
+                -webkit-transform-origin: left;
+                -moz-transform-origin: left;
+            }
+
+            .header-top-logo:hover:before {
+                visibility: visible;
+                 -webkit-transform: scaleX(1);
+                 transform: scaleX(1);
             }
 
             body.single .header-top-logo, body.shortie .header.main-header.scroll .header-top-logo {
-                background-image: url('img/waves-black.svg');
+                background-image: url('img/waves-black2.svg');
             }
 
             .header-top-logo.top {
@@ -671,6 +685,8 @@ Author URI: http:
     @media (max-width: 640px) {
         .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-10 {
             width: 100%;
+            display: block;
+            float: none;
         }
     }
     .grid:after {
@@ -701,16 +717,6 @@ Author URI: http:
 	    	
             max-width: 1340px;
     	}
-
-        .work-desktop:nth-child(even) {
-            
-            
-        }
-
-        .work-desktop:nth-child(odd) {
-            
-            
-        }
 
         .work-desktop {
             display: inline-block;
@@ -829,7 +835,6 @@ Author URI: http:
                     height: 4px;
                     bottom: 5px;
                     background-color: #FFF;
-                    
                     -moz-transform: scaleX(1);
                     -webkit-transform: scaleX(1);
                     transform: scaleX(1);
@@ -1026,6 +1031,10 @@ Author URI: http:
 	.project {
 		padding: 60px 70px;
 	}
+
+    @media (max-width: 640px) {
+
+    }
 
 	.project img {
 		margin-bottom: 90px;
@@ -1309,6 +1318,28 @@ Author URI: http:
         height: 45px;
         background-size: contain;
         background-image: url('img/up-arrow-normal.svg');
+    }
+
+    .header.main-header.scroll {
+        display: none;
+    }
+
+    .header.main-header {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+
+    body.shortie.home .header.main-header {
+        background: #FFF;
+    }
+
+    .project {
+        padding: 120px 70px;
+    }
+
+    .header-text {
+        margin: 140px auto;
     }
 
     .item-introduction { padding: 0 0 40px 0 }
