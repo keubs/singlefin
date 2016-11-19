@@ -1308,6 +1308,7 @@ Author URI: http:
     .about h2, .contact h2 { margin-bottom: 15px; }
     .contact-left-content li { padding: 0 }
     .contact-right-content { padding-top: 15px; }
+    .item-navigation-top { position: static; }
     .item-navigation-top a {
         position: static;
         display: block;
