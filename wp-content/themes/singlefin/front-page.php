@@ -33,7 +33,7 @@
                     ?>
 
                     <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 590px;">
-                        <div class="work-desktop-inner" style="background: -webkit-image-set(url('<?php echo $thumb_desktop['url']; ?>') 1x, url('<?php echo $path; ?>') 2x); ">
+                        <div class="work-desktop-inner" style="background-image: -webkit-image-set(url('<?php echo $thumb_desktop['url']; ?>') 1x, url('<?php echo $path; ?>') 2x); ">
                             <div class="work-desktop-hover-text">
                                 <a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a>
                             </div>
