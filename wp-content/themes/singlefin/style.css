@@ -736,7 +736,7 @@ Author URI: http:
 
         
         .work-desktop.animated {
-            margin-bottom: 0;
+            margin-bottom: -5px;
         }
         .work-desktop:hover {
 	        
