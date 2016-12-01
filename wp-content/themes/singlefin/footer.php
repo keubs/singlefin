@@ -141,29 +141,36 @@
             });
             
             // Nav bar functionality
-            lastpos = jQuery(window).scrollTop();
-            lastcount = 0 - lastpos;
-            jQuery(window).scroll(function() {
-                curpos = jQuery(window).scrollTop();
-                lastcount += lastpos - curpos;
-                lastpos = curpos
-            });
-            setInterval(function() {
-                if (lastcount > 50 || lastpos <= 50) {
-                    // jQuery('body').removeClass('shortie');
-                    lastcount = 0
-                }
-                if (jQuery(window).scrollTop() < 76) {
-                	jQuery('body').removeClass('shortie');
-                }
-                ;if (lastcount < -20) {
-                    jQuery('body').addClass('shortie');
-                    lastcount = 0
-                }
-            }, 50)
+            // lastpos = jQuery(window).scrollTop();
+            // lastcount = 0 - lastpos;
+            // jQuery(window).scroll(function() {
+            //     curpos = jQuery(window).scrollTop();
+            //     lastcount += lastpos - curpos;
+            //     lastpos = curpos
+            // });
+            // setInterval(function() {
+            //     if (lastcount > 50 || lastpos <= 50) {
+            //         // jQuery('body').removeClass('shortie');
+            //         lastcount = 0
+            //     }
+            //     if (jQuery(window).scrollTop() < 76) {
+            //     	jQuery('body').removeClass('shortie');
+            //     }
+            //     ;if (lastcount < -20) {
+            //         jQuery('body').addClass('shortie');
+            //         lastcount = 0
+            //     }
+            // }, 50)
 
             // scroll visible
             jQuery(window).load(function(){
+            	jQuery('.work-desktop').height(jQuery('.work-desktop').width());
+            	jQuery(window).on('resize', function(){
+            		jQuery('.work-desktop').height(jQuery('.work-desktop').width());
+            	});
+            });
+
+            jQuery(document).ready(function(){
             	var $h1 = jQuery('.work-desktop, .project img');
             	var testVis = function () {
             	    $h1.each(function () {
@@ -174,13 +181,9 @@
             	        }
             	    });
             	};
+
             	jQuery(window).on('scroll resize', testVis);
             	testVis();
-
-            	jQuery('.work-desktop').height(jQuery('.work-desktop').width());
-            	jQuery(window).on('resize', function(){
-            		jQuery('.work-desktop').height(jQuery('.work-desktop').width());
-            	});
             });
         });
     </script>

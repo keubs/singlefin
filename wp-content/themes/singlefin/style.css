@@ -242,13 +242,17 @@ Author URI: http:
 
 	
 	.header {
-		
+		background: #FFF;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
 	}
 
     body.single .header, body.shortie .header.main-header.scroll {
-        background-color: #353535;
+        // background-color: #353535;
     }
 
+    /* deprecated */
     .header.main-header.scroll {
         position: fixed;
         z-index: 999;
@@ -256,7 +260,7 @@ Author URI: http:
         width: 100%;
         height: 0;
         overflow: hidden;
-        background: transparent;
+        background: #FFF;
         transition: height .3s;
         -webkit-transition: height .3s;
         -moz-transition: height .3s;
@@ -298,7 +302,7 @@ Author URI: http:
 
             .header-top-logo {
                 display: inline-block;
-                background-image: url('img/waves-white.svg');
+                background-image: url('img/waves-gray.svg');
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: 48px auto;
@@ -333,7 +337,7 @@ Author URI: http:
             }
 
             body.single .header-top-logo, body.shortie .header.main-header.scroll .header-top-logo {
-                background-image: url('img/waves-black2.svg');
+                // background-image: url('img/waves-black2.svg');
             }
 
             .header-top-logo.top {
@@ -358,11 +362,11 @@ Author URI: http:
             }
 
                 body.single .header .header-top-menu a, body.shortie .header.main-header.scroll .header-top-menu a{
-                    color: #FFF;
+                    // color: #FFF;
                 }
 
                 body.single .header .header-top-menu a:hover {
-                    color: #D68533;
+                    // color: #D68533;
                 }
 
                 .header-top-menu a {
@@ -480,8 +484,7 @@ Author URI: http:
             
             .header-text {
                 font-size: 28px;
-                
-                margin: 90px auto;
+                margin: 165px auto 90px;
                 max-width: 1170px;
                 padding: 0 75px;
                 color: #353535;
@@ -1029,7 +1032,7 @@ Author URI: http:
 **********/
 
 	.project {
-		padding: 60px 70px;
+		padding: 135px 70px 60px;
 	}
 
     @media (max-width: 640px) {
@@ -1373,7 +1376,7 @@ Author URI: http:
    
 
     .header-top-logo, .header-top-logo:hover {
-        background-image: url('img/waves-white.svg');
+        background-image: url('img/waves-gray.svg');
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 48px auto;
@@ -1382,7 +1385,7 @@ Author URI: http:
     }
     
     .header-top-logo.top {
-        background-image: url('img/waves-white.svg');
+        background-image: url('img/waves-gray.svg');
     }
 
 	.header-top-menu {

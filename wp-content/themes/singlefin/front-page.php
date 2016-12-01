@@ -7,7 +7,7 @@
     <div class="work" id="work">
         <div class="header-text">
             <p>
-                Born on the always sunny coast of San Francisco, Single Fin studio is the design work of Ben Bloom. Drawing lines since nineteen ninety-one.
+                Born on the always sunny coast of San Francisco, Single Fin Studio is the design work of Ben Bloom. Drawing lines since nineteen ninety-one.
             </p>
         </div>
         <div class="container grid grid-pad" id="isotope">
@@ -33,7 +33,7 @@
                     ?>
 
                     <div class="work-desktop isotope-item col-6" style="width: <?php echo $grid; ?>%; height: 590px;">
-                        <div class="work-desktop-inner" style="background-image: -webkit-image-set(url('<?php echo $thumb_desktop['url']; ?>') 1x, url('<?php echo $path; ?>') 2x); ">
+                        <div class="work-desktop-inner" style="background-image: -webkit-image-set(url('<?php echo $thumb_desktop['url']; ?>') 1x, url('<?php echo $path; ?>') 2x); background-image: url('<?php echo $path; ?>'); ">
                             <div class="work-desktop-hover-text">
                                 <a class="work-desktop-hover-button post-link" rel="<?php the_ID(); ?>" href="<?php echo $link; ?>"><?php echo $title; ?></a>
                             </div>
